@@ -1,7 +1,6 @@
 body {
-	background-color: Black;
+	background-color: black;
 }
-
 
 h1 {
 	font-family: Calbri, sans-serif;
@@ -13,6 +12,30 @@ h2 {
 	font-family: Calbri, sans-serif;
 	font-size: 2.0em;
 	color: Yellow;
+}
+
+div b {
+	color: red;
+}
+
+div  legend{
+	color: lime;
+}
+
+div  button {
+	background-color: red;
+}
+
+div > p {
+	color: blue;
+}
+
+div > h1 {
+	font-weight: medium;
+}
+
+div ~ p {
+	font-weight: medium;
 }
 
 p, legend {
