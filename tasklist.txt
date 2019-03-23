@@ -10,3 +10,9 @@ Assignment Task:  Added an adjacent sibling selector to your last assignment.
 
 Assignment Task:  In the tasklist.txt file, cut and paste all the assignment task steps from this presentation and then commit and push the file to the remote repository.
 
+Assignment Task:  Create a new html file called:  boxmodel.html (the css can live inside this file)Create a example which shows the difference between two block elements and two inline element
+
+Assignment Task:Change the CSS in the previous code to utilize one of the short cuts.Save the file as boxmodel_shortcut.htm
+
+Assignment Task:  Alter the example using negative margins to produce the image on the next slide (name the file negative.html – css can live within the file
+
