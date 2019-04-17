@@ -6,10 +6,17 @@ body {
 header {
 	font: 42px/2 Impact, sans-serif;
 	color: black;
-	background-color: #BD4932;
-	text-shadow: 3px 3px #666;
+	background-color: #4169E1;
+	text-shadow: 3px 3px #B0C4DE;
 	text-align: center;
 	padding-top: 8%;
+}
+
+#wrap {
+	width:85%;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
 }
 
  h1 {
@@ -22,9 +29,8 @@ header {
 }
 
 h2 {
-	text-align: left;
 	font: 32px/1.2 Impact, sans-serif;
-	color: #666;
+	color: #4169E1;
 }
 
 #menu, #menu ul {
@@ -34,11 +40,11 @@ h2 {
 }
 
 #menu {
-    width: 960px;
-    margin: 50px auto;
+    width: 620px;
+    margin: 60px auto;
     border: 1px solid #222;
 	background-color: #111;
-    background-image: linear-gradient(#444, #111);
+    background-image: linear-gradient(#B0C4DE, #C0C0C0);
     border-radius: 6px;
     box-shadow: 0 1px 1px #777;
 }
@@ -57,6 +63,8 @@ h2 {
     zoom:1;
 }
 
+/* list elements */
+
 #menu li {
     float: left;
     border-right: 1px solid #222;
@@ -69,15 +77,83 @@ h2 {
     padding: 12px 30px;
     color: #999;
     text-transform: uppercase;
-    font: bold 14px Arial, Helvetica;
-	color: #BD4932;
+    font: bold 12px Arial, Helvetica;
+	color: blue;
     text-decoration: none;
     text-shadow: 0 1px 0 #000;
 }
 
 #menu li:hover > a {
-    color: #BD4932;
+    color: #fafafa;
 }
+
+
+
+/* Handle the animation of the submenus */
+
+#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #444;   
+    background: linear-gradient(#B0C4DE, #111);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+#menu ul li:last-child {   
+    box-shadow: none; 
+}
+
+#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	color: #FF00FF;
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+/* Handle the First and Last Child */
+#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+	color: #FF00FF;
+	}
 
 
 footer {
@@ -97,7 +173,7 @@ footer li {
 
 footer a {
 	font: 30px/6 Impact, sans-serif;
-	color: #BD4932;
+	color: #4169E1;
 	text-decoration: none;
 	display: inline;
 }
@@ -110,7 +186,7 @@ section {
 	border: 1px solid black;
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
-	background-color: #BD4932;
+	background-color: #B0C4DE;
 }
 
 section img {
@@ -126,7 +202,7 @@ aside {
 	border: 1px solid black;
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
-	background-color: #BD4932;
+	background-color: #B0C4DE;
 }
 
 aside img {
